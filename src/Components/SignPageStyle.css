@@ -1,0 +1,183 @@
+.signPage {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.border {
+  float: left;
+  border: 25px solid rgb(240, 235, 235);
+  border-radius: 13px;
+  display: flex;
+  background-color: rgb(240, 235, 235);
+  /* width: 80%; */
+}
+.leftImg {
+  width: 50%;
+}
+.leftImg img {
+  border-radius: 1rem;
+}
+.rightPart {
+  width: 50%;
+  margin: auto;
+}
+.rightPart form,
+button {
+  margin: 0.5rem;
+}
+h4 {
+  margin: 0.3rem;
+}
+input {
+  margin-bottom: 0.3rem;
+  width: 80%;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 10rem;
+}
+.createBtn {
+  background-color: rgb(0, 200, 100);
+  color: aliceblue;
+}
+.googleBtn {
+  background-color: rgb(200, 0, 100);
+  color: aliceblue;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 0.25rem;
+  border-radius: 5rem;
+ 
+}
+.close {
+  position: sticky;
+  left: 110%;
+  border-radius: 10rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+  padding: 0.59rem;
+}
+.close:active {
+  background-color: black;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 750px) {
+  .signPage {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .border {
+    float: left;
+    border: 0px solid rgb(240, 235, 235);
+    border-radius: 0px;
+    display: flex;
+    background-color: rgb(240, 235, 235);
+  }
+  .leftImg {
+    width: 50%;
+    display: flex;
+  }
+  .leftImg img {
+    width: 100%;
+  }
+  .rightPart {
+    width: 50%;
+    margin: auto;
+  }
+  .rightPart form,
+  button {
+    /* text-align: left; */
+    margin: 0.2rem;
+    font-size: 80%;
+  }
+  h4 {
+    margin: 0.1rem;
+  }
+  input {
+    margin-bottom: 0.1rem;
+    width: 80%;
+    height: 30px;
+    font-size: 70%;
+    background-color: transparent;
+    border-radius: 5rem;
+  }
+button{
+    display: inline;
+}
+  .createBtn:hover {
+    background-color: rgb(0, 200, 100);
+  }
+  .googleBtn:hover {
+    background-color: rgb(200, 0, 100);
+  }
+  .link {
+    text-decoration: none;
+    margin-left: .5rem;
+    color: white;
+    background-color: blue;
+    padding: 0.02rem;
+    font-size: .6rem;
+    border-radius: 5rem;
+  }
+  p {
+    font-size: 70%;
+  }
+  .close {
+    position: sticky;
+    top: 6rem;
+    left: 100rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    padding: 0.59rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .leftImg {
+    width: 0;
+  }
+  .rightPart {
+    width: 100%;
+  }
+  .signPage {
+    width: 100%;
+    /* height: 100%; */
+  }
+  .border {
+    width: 100%;
+  }
+
+  .close {
+    position: sticky;
+    top: 6rem;
+    right: 0.5rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    padding: 0.59rem;
+  }
+}
